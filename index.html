@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<title>UIAA - International Mountaineering and Climbing Federation</title>
+
+
+<!-- css
+	================================================== -->
+	<!-- bootstrap  -->
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen"/>
+
+	<!-- fancybox  -->
+	<link rel="stylesheet" type="text/css" href="_/fancyBox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<link rel="stylesheet" type="text/css" href="_/fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<link rel="stylesheet" type="text/css" href="_/fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+
+	<!-- accordion  -->
+	<link rel="stylesheet" type="text/css" href="_/liteAccordion/css/liteaccordion.css"  />
+
+	<!-- common  -->
+	<link rel="stylesheet" type="text/css" href="css/uiaa.css" />
+
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+	<![endif]-->
+
+
+<!-- js IE9 IE8
+	================================================== -->
+
+	<!-- bootstrap  -->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.js"></script>
+		<![endif]-->
+
+
+		<!-- accordion  -->
+		<!--[if lt IE 9]>
+			<script>
+				document.createElement('figure');
+				document.createElement('figcaption');
+			</script>
+		<![endif]-->
+
+
+	<!-- js
+	================================================== -->
+	<!-- common  -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+
+	<!-- bootstrap  -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- menu  -->
+	<script src="js/dropdownHover.js"></script>
+
+	<!-- fancybox  -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="_/fancyBox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<script type="text/javascript" src="_/fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="_/fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<script type="text/javascript" src="_/fancyBox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	
+	<!-- accordion -->
+	<script src="_/liteAccordion/js/jquery.easing.1.3.js"></script>
+	<script src="_/liteAccordion/js/liteaccordion.jquery.js"></script>
+
+</head>
+<body>
+	<!-- header -->
+	<header class="container">
+		<div class="row">
+
+			<!-- logo + tagline -->
+			<div id="logo_tagline" class="col-sm-8">
+				<!-- logo -->
+				<div id="logo">
+					<a href="#">
+						<img src="images/uiaa-logo.jpg" alt="UIAA - International Mountaineering and Climbing Federation" title="UIAA" />
+					</a>
+					<!-- tagline -->
+					<span id="tagline"> 
+						International Mountaineering and Climbing Federation
+					</span>                         
+				</div>
+			</div>
+
+			<!-- login -->			
+			<div id="login-menu" class="col-sm-4">
+				<a href="#">» Members Login</a>
+			</div>
+
+
+			<div id="search" class="input-group col-sm-4">
+				<input type="text" class="form-control">
+				<span class="input-group-btn"> 
+					<button class="btn btn-default" type="button">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</span>
+			</div>
+		</div>	
+	</header>
+
+	<!-- menu -->
+	<nav class="container">
+		<div class="navbar navbar-default">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand visible-xs" href="#">UIAA</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">About Us</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Organisation</a></li>
+								<li><a href="#">Values</a></li>
+								<li><a href="#">History</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Mountaineering</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Safety label</a></li>
+								<li><a href="#">Mountain medicine</a></li>
+								<li><a href="#">Training standards</a></li>
+								<li><a href="#">Access</a></li>    
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Sustainability</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Mountain protection</a></li>
+								<li><a href="#">Youth</a></li>                 
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Competition Sport</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Ice climbing</a></li>
+								<li><a href="#">Anti dopping</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Media</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">News</a></li> 
+								<li><a href="#">Newsletter</a></li> 
+								<li><a href="#">Press Releases</a></li> 
+								<li><a href="#">Sponsors</a></li> 
+								<li><a href="#">Partners</a></li> 
+								<li><a href="#">Videos</a></li> 
+								<li><a href="#">Photos</a></li>    
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>			
+	</nav>
+
+	<!-- banner -->
+	<div id="carousel-banner" class="carousel slide" data-ride="carousel">
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+
+			<div class="item active">
+				<a href="#" class="banner" style="background-image:url(images/banner.jpg);">
+					<div class="banner-band">
+						<div class="banner-text-container container">					
+							<div class="banner-title">
+								2014 - the 60<sup>th</sup> anniversary of the first ascent to the summit K2
+							</div>
+							<div class="banner-link">
+								» Read all about the 1954 Italian expedition and more
+							</div>					
+						</div>
+					</div>
+				</a>
+			</div>
+
+
+			<div class="item">
+				<a href="#" class="banner" style="background-image:url(images/banner2.jpg);">
+					<div class="banner-band">
+						<div class="banner-text-container container">					
+							<div class="banner-title">
+								Amet, consectetur adipisicing elit. Dignissimos, impedit sit magni!
+							</div>
+							<div class="banner-link">
+								» Similique nihil aliquam dolor ratione!
+							</div>					
+						</div>
+					</div>
+				</a>
+			</div>
+
+
+			<div class="item">
+				<a href="#" class="banner" style="background-image:url(images/banner3.jpg);">
+					<div class="banner-band">
+						<div class="banner-text-container container">					
+							<div class="banner-title">
+								Quasi, ullam, asperiores voluptatum illo officia facilis excepturi molestiae iste quia voluptas.
+							</div>
+							<div class="banner-link">
+								» Sit amet, consectetur adipisicing elit. Similique nihil aliquam dolor ratione!
+							</div>					
+						</div>
+					</div>
+				</a>
+			</div>
+
+
+			<div class="item">
+				<a href="#" class="banner" style="background-image:url(images/banner4.jpg);">
+					<div class="banner-band">
+						<div class="banner-text-container container">					
+							<div class="banner-title">
+								Consectetur adipisicing elit. Dolorem magnam exercitationem qui?
+							</div>
+							<div class="banner-link">
+								» Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</div>					
+						</div>
+					</div>
+				</a>
+			</div>
+
+
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-banner" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-banner" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+
+	<!-- content -->
+	<div id="content" class="container">
+		<!-- slider -->
+		<div class="featured hidden-xs">
+			<div class="featured-title">
+				<h2>Featured Events - 2013</h2>
+				<a href="#" class="featured-title-link">» See Full Events Calendar</a>
+			</div>
+
+			<div id="accordion">
+				<ol> 
+					<li>
+						<h2><span>January</span></h2>
+						<div class="slide-item">
+							<div class="slide-item-bg clearfix">		
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Lenin Peak Climb</figcaption>
+										<span class="accordion-date">10-15 January</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ru"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion2.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption title="Very very long text that gets truncated with a fade effect to stay in one line but its fully visible on hover if the title attr is present">Very very long text that gets truncated with a fade effect to stay in one line but its fully visible on hover</figcaption>
+										<span class="accordion-date">18-20 January</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-cz"></span></li>
+										<li><span class="flag flag-ru"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion3.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Mount Olympus Climb</figcaption>
+										<span class="accordion-date">22-25 January</span>
+									</div>
+								</a>
+							</div>		
+						</div>
+					</li>
+
+					<li>
+						<h2><span>February</span></h2>
+						<div class="slide-item">
+							<div class="slide-item-bg clearfix">		
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Lenin Peak Climb</figcaption>
+										<span class="accordion-date">10-15 February</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+										<li><span class="flag flag-ru"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion2.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Youth Climbing Camp</figcaption>
+										<span class="accordion-date">18-20 February</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ru"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion3.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Mount Olympus Climb</figcaption>
+										<span class="accordion-date">22-25 February</span>
+									</div>
+								</a>
+							</div>		
+						</div>
+					</li>
+
+					<li>
+						<h2><span>March</span></h2>
+						<div class="slide-item">
+							<div class="slide-item-bg clearfix">		
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Lenin Peak Climb</figcaption>
+										<span class="accordion-date">10-15 March</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion2.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Youth Climbing Camp</figcaption>
+										<span class="accordion-date">18-20 March</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+										<li><span class="flag flag-ru"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion3.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Mount Olympus Climb</figcaption>
+										<span class="accordion-date">22-25 March</span>
+									</div>
+								</a>
+							</div>		
+						</div>
+					</li>
+					
+					<li>
+						<h2><span>April</span></h2>
+						<div class="slide-item">
+							<div class="slide-item-bg clearfix">		
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Lenin Peak Climb</figcaption>
+										<span class="accordion-date">10-15 April</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion2.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Youth Climbing Camp</figcaption>
+										<span class="accordion-date">18-20 April</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion3.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Mount Olympus Climb</figcaption>
+										<span class="accordion-date">22-25 April</span>
+									</div>
+								</a>
+							</div>		
+						</div>
+					</li>
+
+					<li>
+						<h2><span>May</span></h2>
+						<div class="slide-item">
+							<div class="slide-item-bg clearfix">		
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Lenin Peak Climb</figcaption>
+										<span class="accordion-date">10-15 May</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion2.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Youth Climbing Camp</figcaption>
+										<span class="accordion-date">18-20 May</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion3.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Mount Olympus Climb</figcaption>
+										<span class="accordion-date">22-25 May</span>
+									</div>
+								</a>
+							</div>		
+						</div>
+					</li>
+
+					<li>
+						<h2><span>June</span></h2>
+						<div class="slide-item">
+							<div class="slide-item-bg clearfix">		
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Lenin Peak Climb</figcaption>
+										<span class="accordion-date">10-15 June</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion2.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Youth Climbing Camp</figcaption>
+										<span class="accordion-date">18-20 June</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion3.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Mount Olympus Climb</figcaption>
+										<span class="accordion-date">22-25 June</span>
+									</div>
+								</a>
+							</div>		
+						</div>
+					</li>
+
+					<li>
+						<h2><span>July</span></h2>
+						<div class="slide-item">
+							<div class="slide-item-bg clearfix">		
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Lenin Peak Climb</figcaption>
+										<span class="accordion-date">10-15 July</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion2.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Youth Climbing Camp</figcaption>
+										<span class="accordion-date">18-20 July</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion3.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Mount Olympus Climb</figcaption>
+										<span class="accordion-date">22-25 July</span>
+									</div>
+								</a>
+							</div>		
+						</div>
+					</li>
+
+					<li>
+						<h2><span>August</span></h2>
+						<div class="slide-item">
+							<div class="slide-item-bg clearfix">		
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Lenin Peak Climb</figcaption>
+										<span class="accordion-date">10-15 August</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion2.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Youth Climbing Camp</figcaption>
+										<span class="accordion-date">18-20 August</span>
+									</div>
+								</a>
+								
+								<a href="#" class="accordion-element">
+									<ul class="flags-list">
+										<li><span class="flag flag-ro"></span></li>
+									</ul>
+									<div class="accordion-img" style="background-image: url('images/accordion3.jpg')"></div>
+									<div class="accordion-img-text">
+										<figcaption>Mount Olympus Climb</figcaption>
+										<span class="accordion-date">22-25 August</span>
+									</div>
+								</a>
+
+							</div>
+						</li>
+
+						<li>
+							<h2><span>September</span></h2>
+							<div class="slide-item">
+								<div class="slide-item-bg clearfix">		
+									<a href="#" class="accordion-element">
+										<ul class="flags-list">
+											<li><span class="flag flag-ro"></span></li>
+										</ul>
+										<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+										<div class="accordion-img-text">
+											<figcaption>Lenin Peak Climb</figcaption>
+											<span class="accordion-date">10-15 September</span>
+										</div>
+									</a>
+
+									<a href="#" class="accordion-element">
+										<ul class="flags-list">
+											<li><span class="flag flag-ro"></span></li>
+										</ul>
+										<div class="accordion-img" style="background-image: url('images/accordion2.jpg')"></div>
+										<div class="accordion-img-text">
+											<figcaption>Youth Climbing Camp</figcaption>
+											<span class="accordion-date">18-20 September</span>
+										</div>
+									</a>
+
+									<a href="#" class="accordion-element">
+										<ul class="flags-list">
+											<li><span class="flag flag-ro"></span></li>
+											<li><span class="flag flag-ru"></span></li>
+										</ul>
+										<div class="accordion-img" style="background-image: url('images/accordion3.jpg')"></div>
+										<div class="accordion-img-text">
+											<figcaption>Mount Olympus Climb</figcaption>
+											<span class="accordion-date">22-25 September</span>
+										</div>
+									</a>
+								</div>		
+							</div>
+						</li>
+
+
+
+						<li>
+							<h2><span>October</span></h2>
+							<div class="slide-item">
+								<div class="slide-item-bg clearfix">		
+									<a href="#" class="accordion-element">
+										<ul class="flags-list">
+											<li><span class="flag flag-ro"></span></li>
+										</ul>
+										<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+										<div class="accordion-img-text">
+											<figcaption>Lenin Peak Climb</figcaption>
+											<span class="accordion-date">10-15 October</span>
+										</div>
+									</a>
+
+									<a href="#" class="accordion-element">
+										<ul class="flags-list">
+											<li><span class="flag flag-ro"></span></li>
+										</ul>
+										<div class="accordion-img" style="background-image: url('images/accordion2.jpg')"></div>
+										<div class="accordion-img-text">
+											<figcaption>Youth Climbing Camp</figcaption>
+											<span class="accordion-date">18-20 October</span>
+										</div>
+									</a>
+
+									<a href="#" class="accordion-element">
+										<ul class="flags-list">
+											<li><span class="flag flag-ro"></span></li>
+											<li><span class="flag flag-ru"></span></li>
+										</ul>
+										<div class="accordion-img" style="background-image: url('images/accordion3.jpg')"></div>
+										<div class="accordion-img-text">
+											<figcaption>Mount Olympus Climb</figcaption>
+											<span class="accordion-date">22-25 October</span>
+										</div>
+									</a>
+								</div>		
+							</div>
+						</li>
+
+						<li>
+							<h2><span>November</span></h2>
+							<div class="slide-item">
+								<div class="slide-item-bg clearfix">		
+									<a href="#" class="accordion-element">
+										<ul class="flags-list">
+											<li><span class="flag flag-ro"></span></li>
+											<li><span class="flag flag-ru"></span></li>
+										</ul>
+										<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+										<div class="accordion-img-text">
+											<figcaption>Lenin Peak Climb</figcaption>
+											<span class="accordion-date">10-15 November</span>
+										</div>
+									</a>
+								</div>		
+							</div>
+						</li>
+
+						<li>
+							<h2><span>December</span></h2>
+							<div class="slide-item">
+								<div class="slide-item-bg clearfix">		
+									<a href="#" class="accordion-element">
+										<ul class="flags-list">
+											<li><span class="flag flag-ch"></span></li>
+										</ul>
+										<div class="accordion-img" style="background-image: url('images/accordion1.jpg')"></div>
+										<div class="accordion-img-text">
+											<figcaption>Lenin Peak Climb</figcaption>
+											<span class="accordion-date">10-15 December</span>
+										</div>
+									</a>
+
+									<a href="#" class="accordion-element">
+										<ul class="flags-list">
+											<li><span class="flag flag-gr"></span></li>
+											<li><span class="flag flag-ru"></span></li>
+										</ul>
+										<div class="accordion-img" style="background-image: url('images/accordion2.jpg')"></div>
+										<div class="accordion-img-text">
+											<figcaption>Youth Climbing Camp</figcaption>
+											<span class="accordion-date">18-20 December</span>
+										</div>
+									</a>
+
+									<a href="#" class="accordion-element">
+										<ul class="flags-list">
+											<li><span class="flag flag-fr"></span></li>
+										</ul>
+										<div class="accordion-img" style="background-image: url('images/accordion3.jpg')"></div>
+										<div class="accordion-img-text">
+											<figcaption>Mount Olympus Climb</figcaption>
+											<span class="accordion-date">22-25 December</span>
+										</div>
+									</a>
+								</div>		
+							</div>
+						</li>
+
+				</ol>
+				<noscript>
+					<p>Please enable JavaScript to get the full experience.</p>
+				</noscript>
+			</div>	<!-- accordion -->
+		</div><!-- featured accordion -->
+
+		<hr />
+
+		<div class="row">
+			<!-- Left column, main content -->			
+			<div class="col-md-8 col-sm-12 clearfix" id="left-content">
+				<!-- Featured-news -->
+				<div class="featured-news clearfix">
+					<div class="featured-title">
+						<h2>Featured News</h2>
+					</div>
+
+					<div id="newstabs-wrapper">
+						<div id="newstabs" class="tabbable">
+
+							<!-- Button left -->
+							<a id="prevtab" class="left newstabs-control" href="#newstabs" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+
+							<!-- Nav tabs -->
+							<ul id="newstab" class="nav nav-tabs">
+								<li class="active"><a href="#featured-news-1" data-toggle="tab">•</a></li>
+								<li><a href="#featured-news-2" data-toggle="tab">•</a></li>
+								<li><a href="#featured-news-3" data-toggle="tab">•</a></li>
+								<li><a href="#featured-news-4" data-toggle="tab">•</a></li>
+								<li><a href="#featured-news-5" data-toggle="tab">•</a></li>
+								<!-- <li><a href="#featured-news-5" data-toggle="tab"><span class="bullet"></span></a></li> -->
+							</ul>
+
+							<!-- Button right -->
+							<a id="nexttab" class="right newstabs-control" href="#newstabs" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+
+						</div>
+					</div>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+
+						<div id="featured-news-1" class="active tab-pane">	
+							<a href="#">
+								<img class="newsimg" src="images/featured-news.jpg" />
+							</a>					
+							<div class="news-text-wrapper">
+								<h3><a href="#">Nepal government to tighten regulations around climbing Mount Everest</a></h3>
+								<div class="news-summary">
+									The Nepal government announced this week it would set up a permanent government team at the base camp of Mount Everest which observers believe is a first step towards the tightening of regulations around the number of climbers on the mountain, and what they do on it.
+								</div>
+								<div class="article-date">03 Aug 2013</div>
+							</div>
+						</div>
+
+						<div id="featured-news-2" class="tab-pane">	
+							<a href="#"><img class="newsimg" src="images/featured-news2.jpg" /></a>
+							<div class="news-text-wrapper">
+								<h3 ><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora?</a></h3>
+								<div class="news-summary">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, soluta, hic, fugit facere suscipit magni id amet eveniet ex voluptatum illum perferendis dolor alias praesentium consequatur laudantium obcaecati voluptate adipisci voluptates tempora.
+								</div>
+								<div class="article-date">04 Aug 2013</div>
+							</div>
+						</div>
+
+						<div id="featured-news-3" class="tab-pane">	
+							<a href="#"><img class="newsimg" src="images/featured-news3.jpg" /></a>
+							<div class="news-text-wrapper">
+								<h3 ><a href="#">Consectetur adipisicing elit. Incidunt deleniti nulla ex esse fuga similique?</a></h3>
+								<div class="news-summary">
+									Porro, nihil, temporibus, ad laboriosam odit pariatur ducimus fugit iste ut quibusdam saepe aperiam incidunt reprehenderit esse hic eos blanditiis voluptatum nesciunt quas quisquam laudantium tempora est at similique ex atque vitae eveniet quidem sint fuga amet aliquam quos itaque? Dolorum, temporibus.
+								</div>
+								<div class="article-date">05 Aug 2013</div>
+							</div>
+						</div>
+
+						<div id="featured-news-4" class="tab-pane">	
+							<a href="#"><img class="newsimg" src="images/featured-news4.jpg" /></a>
+							<div class="news-text-wrapper">
+								<h3 ><a href="#">Debitis, aperiam repellendus consectetur ullam vel possimus officia corporis accusamus dolor!</a></h3>
+								<div class="news-summary">
+									Recusandae possimus delectus deserunt nihil quam similique praesentium obcaecati molestiae unde. Accusamus laborum est quae deserunt nobis delectus corporis eveniet. Quae nihil quasi laboriosam ea.
+								</div>
+								<div class="article-date">06 Aug 2013</div>
+							</div>
+						</div>
+
+						<div id="featured-news-5" class="tab-pane">	
+							<a href="#"><img class="newsimg" src="images/featured-news5.jpg" /></a>
+							<div class="news-text-wrapper">
+								<h3 ><a href="#">Adipisicing elit. Architecto illum sint temporibus.</a></h3>
+								<div class="news-summary">
+									Impedit soluta magni reprehenderit aperiam voluptates saepe numquam quidem rem tenetur quibusdam repellat ab voluptatem vero inventore odio eius atque nihil dolor voluptatum a dignissimos quas enim reiciendis. Eos excepturi voluptate ratione dolor earum atque.
+								</div>
+								<div class="article-date">07 Aug 2013</div>
+							</div>
+						</div>
+
+					</div><!-- tab-content -->
+				</div><!-- featured news -->
+
+				<hr />
+
+				<!-- News -->
+				<div id="news" class="featured">
+
+					<div class="featured-title">
+						<h2>News</h2>
+						<a href="#" class="featured-title-link">» See All News</a>
+					</div>
+
+					<div class="news2">
+						<a href="#"><img class="news2-img" src="images/news1.jpg" /></a>
+						<div class="news2-text-wrapper">
+							<h3><a href="#">UIAA congratulates German Alpine Club on its millionth member</a></h3>
+							<div class="news2-summary">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi Excepteur sint occaecat cupidatat non proident, sunt in culpa aperiam, eaque ipsa quae ab illo...
+							</div>		<!-- news2 summary -->					
+							<div class="article2-date">06 Aug 2013</div>
+						</div><!-- news 2 text wrapper -->
+					</div>
+
+					<div class="news2">
+						<a href="#"><img class="news2-img" src="images/news2.jpg" /></a>
+						<div class="news2-text-wrapper">
+							<h3><a href="#">Updated: Pakistan Alpine Club joins UIAA in condemning attack on Nanga Parbat mountaineers</a></h3>
+							<div class="news2-summary">
+								Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem...
+							</div>		<!-- news2 summary -->					
+							<div class="article2-date">06 Aug 2013</div>
+						</div><!-- news 2 text wrapper -->
+					</div>
+
+					<div class="news2">
+						<a href="#"><img class="news2-img" src="images/news3.jpg" /></a>
+						<div class="news2-text-wrapper">
+							<h3><a href="#">Youth world championships to be held in France in 2014</a></h3>
+							<div class="news2-summary">
+								Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem. Quis autem vel eum...
+							</div>		<!-- news2 summary -->					
+							<div class="article2-date">06 Aug 2013</div>
+						</div><!-- news 2 text wrapper -->
+					</div>
+
+					<div class="news2 news2-last">
+						<a href="#"><img class="news2-img" src="images/news4.jpg" /></a>
+						<div class="news2-text-wrapper">
+							<h3><a href="#">Update - UIAA Safety commission tackles via ferrata, bolts and rope standards in Chamonix, France</a></h3>
+							<div class="news2-summary">
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi Excepteur sint occaecat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio repellendus earum quos expedita itaque accusantium totam fugit. Tempore, perspiciatis, nulla. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, nihil, explicabo, dolores doloremque accusamus reprehenderit id amet perferendis similique a quas sint sapiente aspernatur necessitatibus dolore tenetur natus quos architecto qui minus eius laboriosam nostrum corporis aperiam quis voluptatem quam.
+							</div>		<!-- news2 summary -->					
+							<div class="article2-date">06 Aug 2013</div>
+						</div><!-- news 2 text wrapper -->
+					</div>
+				</div><!-- news 2 -->
+			</div><!-- col-md-8 -->
+
+			<div class="col-md-4 col-sm-12">
+
+				<hr class="cols-lg-hr-hide cols-md-hr-show" />
+
+				<div class="row">
+					<div class="col-md-12 col-sm-7 ">
+
+						<!-- social -->
+						<div id="social" class="featured">
+							<div class="featured-title">
+								<h2>Connect with UIAA</h2>
+							</div>
+							<ul>
+								<li><a href="#"><img src="images/social-fb.jpg"></a></li>
+								<li><a href="#"><img src="images/social-tw.jpg"></a></li>
+								<li><a href="#"><img src="images/social-gg.jpg"></a></li>
+								<li><a href="#"><img src="images/social-yt.jpg"></a></li>
+							</ul>
+						</div>
+						<hr />
+
+						<!-- newsletter -->
+						<div id="newsletter" class="featured">
+							<div class="featured-title">
+								<h2>Subscribe to our newsletter</h2>
+							</div>
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="E-mail address">
+								<span class="input-group-btn"> 
+									<button class="btn btn-default" type="button">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+									</button>
+								</span>
+							</div>
+						</div>
+						<hr class="cols-md-hr-hide cols-lg-hr-show" />
+					</div>	
+
+					<div class="col-md-12 col-sm-5" id="photos-column">
+						<!-- photos of the week -->
+						<div id="photos-of-the-week" class="featured">
+							<div class="featured-title">
+								<h2>Photos of the Week</h2>
+								<a href="#" class="featured-title-link">» See Gallery</a>
+							</div>
+
+							<div id="photos-wrapper">
+								<div id="carousel-photos" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carousel-photos" data-slide-to="0" class="active"></li>
+										<li data-target="#carousel-photos" data-slide-to="1"></li>
+										<li data-target="#carousel-photos" data-slide-to="2"></li>
+										<li data-target="#carousel-photos" data-slide-to="3"></li>
+										<li data-target="#carousel-photos" data-slide-to="4"></li>
+										<li data-target="#carousel-photos" data-slide-to="5"></li>
+										<li data-target="#carousel-photos" data-slide-to="6"></li>
+										<li data-target="#carousel-photos" data-slide-to="7"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="item active">
+											<a href="images/photos-large-1.jpg" rel="week-gallery" class="fancybox" title="Sample title"><img src="images/photos-1.jpg" /></a>
+										</div>
+
+										<div class="item">
+											<a href="images/photos-large-2.jpg" rel="week-gallery" class="fancybox" title="Sample title"><img src="images/photos-2.jpg" /></a>
+
+										</div>
+										<div class="item">
+											<a href="images/photos-large-3.jpg" rel="week-gallery" class="fancybox" title="Sample title"><img src="images/photos-3.jpg" /></a>
+										</div>
+										<div class="item">
+											<a href="images/photos-large-4.jpg" rel="week-gallery" class="fancybox" title="Sample title"><img src="images/photos-4.jpg" /></a>
+										</div>
+										<div class="item">
+											<a href="images/photos-large-5.jpg" rel="week-gallery" class="fancybox" title="Sample title"><img src="images/photos-5.jpg" /></a>
+										</div>
+										<div class="item">
+											<a href="images/photos-large-6.jpg" rel="week-gallery" class="fancybox" title="Sample title"><img src="images/photos-6.jpg" /></a>
+										</div>
+										<div class="item">
+											<a href="images/photos-large-7.jpg" rel="week-gallery" class="fancybox" title="Sample title"><img src="images/photos-7.jpg" /></a>
+										</div>
+										<div class="item">
+											<a href="images/photos-large-8.jpg" rel="week-gallery" class="fancybox" title="Sample title"><img src="images/photos-8.jpg" /></a>
+										</div>
+
+									</div>
+									<a class="left carousel-control" href="#carousel-photos" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+									</a>
+									<a class="right carousel-control" href="#carousel-photos" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+									</a>
+								</div>
+							</div><!-- /example -->
+
+						</div>
+					</div>
+				</div>
+
+			</div><!-- col 4 right content -->
+
+		</div><!-- row -->
+
+		<hr />
+
+		<div class="featured">
+			<div class="featured-title">
+				<h2>Featured Videos</h2>
+				<a href="#" class="featured-title-link">» All Videos</a>
+			</div>
+
+			<div id="carousel-videos" class="carousel slide" data-ride="carousel">
+
+				<div class="controls-videos-wrapper">
+
+					<a class="left carousel-control" href="#carousel-videos" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-videos" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-videos" data-slide-to="1"></li>
+					</ol>
+					<a class="right carousel-control" href="#carousel-videos" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+
+				<div class="carousel-inner">
+
+					<div class="item active ">
+						<ul>
+							<li class="video">
+								<a href="http://www.youtube.com/embed/gcIzblh7Tx8?autoplay=1" class="fancybox fancybox.iframe"><img src="images/video1.jpg"></a>
+								<div class="video-description">
+									UIAA Youth Ice Climbing Training Guidlines.
+								</div>
+							</li>
+
+							<li class="video">
+								<a href="http://www.youtube.com/embed/wSlirpR6B_Y?autoplay=1" class="fancybox fancybox.iframe">
+									<img src="images/video2.jpg">									
+								</a>
+								<div class="video-description">
+									UIAA Youth Ice Climbing Route Setting Guidelines
+								</div>
+							</li>
+
+							<li class="video">
+								<a href="http://www.youtube.com/embed/0LAUBzmTJ3E?autoplay=1" class="fancybox fancybox.iframe"><img src="images/video3.jpg"></a>
+								<div class="video-description">
+									UIAA Youth Ice Climbing Rules and Regulations G…
+								</div>
+							</li>
+
+							<li class="video">
+								<a href="http://www.youtube.com/embed/U1FNVJJVcqA?autoplay=1" class="fancybox fancybox.iframe"><img src="images/video4.jpg"></a>
+								<div class="video-description">
+									Ice Climbing World Cup 2012 Trailer
+								</div>
+							</li>	
+						</ul>
+					</div><!-- item --> 
+
+					<div class="item">
+						<ul>
+							<li class="video">
+								<a href="http://www.youtube.com/embed/U1FNVJJVcqA?autoplay=1" class="fancybox fancybox.iframe"><img src="images/video1.jpg"></a>
+								<div class="video-description">
+									12345
+								</div>
+							</li>
+							
+							<li class="video">
+								<a href="#"><img src="images/video2.jpg"></a>
+								<div class="video-description">
+									6879876
+								</div>
+							</li>
+							
+							<li class="video">
+								<a href="#"><img src="images/video3.jpg"></a>
+								<div class="video-description">
+									524trgebe e
+								</div>
+							</li>
+							
+							<li class="video">
+								<a href="#"><img src="images/video4.jpg"></a>
+								<div class="video-description">
+									gefgegeteg
+								</div>
+							</li>	
+						</ul>
+					</div><!-- item --> 
+				</div><!-- carousel-inner -->
+
+			</div><!-- carousel-videos -->
+
+		</div><!-- featured videos -->
+
+	</div><!-- content -->
+
+	<hr class="cols-xs-hr-hide" />
+
+	<!-- footer -->
+	<footer id="footer" class="container">
+		<div id="site-map" class="clearfix">
+			<ul>
+				<li>
+					<h2>About Us
+					</h2>
+					<ul>
+						<li> <a href="#"> Organisation</a> </li>
+						<li> <a href="#"> Values</a> </li>
+						<li> <a href="#"> History</a> </li>
+						<li> <a href="#"> Contact Us</a> </li>    
+					</ul>
+				</li>
+				<li>
+					<h2>Mountaineering
+					</h2>
+					<ul>	
+						<li> <a href="#">Safety label</a> </li>
+						<li> <a href="#">Mountain medicine</a> </li>
+						<li> <a href="#">Training standards</a> </li>
+						<li> <a href="#">Access</a> </li>    
+					</ul>
+				</li>
+				<li>
+					<h2>Sustainability
+					</h2>
+					<ul>
+						<li> <a href="#">Mountain protection</a> </li>
+						<li> <a href="#">Youth</a> </li>                 
+					</ul>
+				</li>
+				<li>
+					<h2>Competition Sport
+					</h2>
+					<ul>
+						<li> <a href="#">Ice climbing</a> </li>
+						<li> <a href="#">Anti dopping</a> </li>                   
+					</ul>
+				</li>
+				<li>
+					<h2>Media
+					</h2>
+					<ul>
+						<li> <a href="#">News</a> </li> 
+						<li> <a href="#">Newsletter</a> </li> 
+						<li> <a href="#">Press Releases</a> </li> 
+						<li> <a href="#">Sponsors</a> </li> 
+						<li> <a href="#">Partners</a> </li> 
+						<li> <a href="#">Videos</a> </li> 
+						<li> <a href="#">Photos</a> </li>    
+					</ul>
+				</li>
+			</ul>
+		</div><!--end site map-->
+		<hr />
+		<div id="footer-bottom">
+			<img src="images/uiaa-logo-vert.jpg" id="footer-logo"/>
+			<h4 id="uiaa-initials-en" class="uiaa-initials">INTERNATIONAL MOUNTAINEERING AND CLIMBING FEDERATION</h4>
+			<h4 id="uiaa-initials-fr" class="uiaa-initials">UNION INTERNATIONALE DES ASSOCIATIONS D’ALPINISME</h4>
+		</div>
+		<hr />
+		<div id="copyright">
+			&copy; 2013 UIAA. All rights reserved.
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+		//================================================
+		// ///////////////////////////  accordion
+		//========================
+		(function($, d) {
+			$('#accordion').liteAccordion({
+				onTriggerSlide : function() {
+					this.find('figcaption').fadeOut();
+				},
+				onSlideAnimComplete : function() {
+					this.find('figcaption').fadeIn();
+				},
+				autoPlay : false,
+				pauseOnHover : true,
+					theme : 'basic', //basic, light, dark, stitch
+					rounded : false, //true, false
+					enumerateSlides : false, //true, false
+					containerWidth : 950,
+					containerHeight : 108, 
+					headerWidth: 35,
+					//easing: 'swing', //easeOutBounce, easeInOutQuart, swing
+					firstSlide : 1,
+					activateOn: 'click', //mouseover, click
+					linkable : false //true, false
+				}).find('figcaption:first').show();
+		})(jQuery, document);
+
+
+		//================================================
+		// ///////////////////////////  carousel videos
+		//========================
+		$(function(){
+			$("#carousel-videos").carousel({
+				interval:false
+			});
+		});
+
+	
+		//================================================
+		// ///////////////////////////  news tabs
+		//========================
+		var $tabs = $('.tabbable li');
+
+		$('#prevtab').on('click', function() {
+			if($tabs.filter('.active').is(':first-child'))
+			{
+				$tabs.last('li').find('a[data-toggle="tab"]').tab('show');
+			}
+			else
+			{
+				$tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');						
+			}
+		});
+
+		$('#nexttab').on('click', function() {
+			if($tabs.filter('.active').is(':last-child'))
+			{
+				$tabs.first('li').find('a[data-toggle="tab"]').tab('show');
+			}
+			else
+				$tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
+		});
+
+
+		//================================================
+		// ///////////////////////////  fancybox
+		//========================
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+		});
+	</script>
+</body>
+</html>

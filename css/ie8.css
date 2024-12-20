@@ -1,0 +1,13 @@
+.banner-band{
+	background-color: #000000;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.carousel-indicators{
+	top:auto;
+	bottom:-48px !important;
+}
+#accordion{
+	margin:0 !important;
+-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.76, M12=0, M21=0, M22=0.76, SizingMethod='auto expand')";
+}
+ 
